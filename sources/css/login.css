@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-style: italic;
+  background-color: #1f53c5;
+}
+
+.container {
+  width: 50em;
+  margin: 50px auto;
+  background-color: #24303c;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #6b6b6b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"] {
+  padding: 10px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  margin: 0 auto;
+  background-color: #1f53c5;
+  color: #fff;
+  width: 10em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+
+button[type="submit"]:hover {
+  background-color: #133b92;
+}
+.box-uleam{
+  width: 50%;
+  margin: 0px;
+  height: 550px;
+  border-right: 0;
+  border-top: 0;
+  border-left: 1px;
+  border-bottom: 0;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+.box-uleam img{
+  width: 350px;
+  height: 300px;
+  margin: 5em 0.8em;
+}
+.box-register{
+  margin: 25px auto;
+  background-color: #24303c;
+}
+.content-arrow img {
+  margin: 0% 10%;
+  width: 3em;
+  height: 3em;
+}
+.content-arrow .flecha{
+  top: 0.5em;
+  position: relative;
+  margin-left: 0.5em;
+  transform: rotate(-180deg);
+  width: 3.7em;
+  height: 2.8em;
+  background: #1f53c5;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border-radius: 30px;
+  cursor: pointer;
+  -webkit-animation: ani2 0.5s steps(22) forwards;
+  animation: ani2 0.5s steps(22) forwards;
+}
+
+.content-arrow .flecha:hover {
+  -webkit-animation: ani 0.5s steps(22) forwards;
+  animation: ani 0.5s steps(22) forwards;
+}
+
+.mask-arrow img {
+  width: 2.3em;
+  height: 2.6em;
+}
+
+.mask-arrow{
+  transform: rotate(-180deg);
+  text-align: center;
+  width: 101%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 20px;
+  top: 2.4em;
+  right: 17.8em;
+  overflow: hidden;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
